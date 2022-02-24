@@ -170,7 +170,7 @@ func getObjectCDNURL(bucketConfig *BucketConfig, storageKey string) string {
 		return ""
 	}
 
-	replacer := strings.NewReplacer("{StorageKey}", storageKey, "{Bucket}", bucketConfig.Name)
+	replacer := strings.NewReplacer("{StorageKey}", storageKey)
 
 	return replacer.Replace(bucketConfig.CDNURL)
 }

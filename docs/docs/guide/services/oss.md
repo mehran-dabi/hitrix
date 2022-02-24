@@ -24,10 +24,10 @@ oss:
   buckets:
     public: # config for public bucket
      name: bucket-name # bucket name
-     cdn_url: "https://somesite.com/{{.StorageKey}}/" # Available variables are: .Namespace, .CounterID, and, .StorageKey
+     cdn_url: "https://somesite.com/{{.StorageKey}}/" # Available variables is: .StorageKey (Namespace is part of StorageKey)
     private: # config for private bucket
      name: bucket-name-private # bucket name
-     local: "http://127.0.0.1/{{.Namespace}}/{{.StorageKey}}/{{.CounterID}}" # Will output "http://127.0.0.1/product/1.jpeg/1"
+     local: "http://127.0.0.1/{{.StorageKey}}" # Will output "http://127.0.0.1/product/1.jpeg"
 ```
 Google example:
 
