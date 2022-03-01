@@ -19,7 +19,7 @@ module.exports = {
         editLinkText: '',
         lastUpdated: true,
         smoothScroll: true,
-        algolia: config.Algolia,
+        // algolia: config.Algolia,
         navbar: config.Navigation,
         sidebar: config.Sidebar,
     },
@@ -28,6 +28,7 @@ module.exports = {
         ['@vuepress/plugin-back-to-top', true],
         ['@vuepress/plugin-medium-zoom', true],
         ['vuepress-plugin-sitemap', { hostname: 'https://coretrix.github.io/hitrix' }],
+        // ['@vuepress/docsearch', config.Algolia]
         // ['@vuepress/google-analytics', { 'ga': ''}]
     ]
 }

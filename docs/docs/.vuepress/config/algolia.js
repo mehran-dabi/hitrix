@@ -1,9 +1,14 @@
 // Put Algolia config here
 module.exports = {
-    apiKey: '21fc128e1fae00977c070d0f30e7b0cd',
-    indexName: 'vuepress',
-    appId: 'WMOLNCX6UH',
-    algoliaOptions: {
-        facetFilters: ['tags:v1']
+    apiKey: '921dcd964985c0e5676ec9d7af6dcb0d',
+    indexName: 'coretrix-hitrix',
+    appId: 'FS5BXHBZ0Z',
+    searchParameters: {
+      facetFilters: ['tags:v2'],
+    },
+    locales: {
+      '/': {
+        placeholder: 'Search Documentation',
+      }
     }
 }

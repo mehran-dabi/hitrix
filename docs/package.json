@@ -7,5 +7,8 @@
     "@vuepress/plugin-search": "^2.0.0-beta.26",
     "vuepress": "^2.0.0-beta.26",
     "vuepress-plugin-sitemap": "^2.3.1"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-docsearch": "^2.0.0-beta.35"
   }
 }
